@@ -1,5 +1,7 @@
 import { useContext } from "react";
 import { AuthContext } from "../context/AuthContextProvider";
+import heroBg from "../../assets/images/hero-phone-bg.svg";
+
 
 const Home = () => {
   const authContext = useContext(AuthContext);
@@ -11,6 +13,17 @@ const Home = () => {
           <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-800">
             Welcome {authContext.username}
           </h1>
+          <div className="slider-section">
+            <div className=" d-flex ">
+              <div className="slider-text-wrap">
+                <div className="slider-text">Shop the Latest Iphones</div>
+                <button className="show-now">Shop Now</button>
+              </div>
+              <div className="slider-image-wrap">
+                <img src={heroBg} alt="" className="slider-image" />
+              </div>
+            </div>
+          </div>
           {/* Show different content based on the roles the user has assigned. */}
           {authContext.hasRole("user") && <p>You are a user</p>}
           {authContext.hasRole("admin") && <p>You are a admin</p>}
