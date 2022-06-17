@@ -6,15 +6,15 @@
   .slider-text-wrap {
     padding: 75px 35px 30px 79px;
   }
-     @media screen and (max-width: 768px){
-        .slider-text-wrap {
+@media screen and (max-width: 768px){
+    .slider-text-wrap {
     padding:3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
      }
-        }
+      }
     
   .show-now {
     background: #ef5e0d;
