@@ -40,7 +40,6 @@ interface AuthContextValues {
   /**
    * Check if the user has the given role
    */
-  hasRole: (role: string) => boolean;
 }
 
 /**
@@ -50,7 +49,6 @@ const defaultAuthContextValues: AuthContextValues = {
   isAuthenticated: false,
   username: "",
   logout: () => {},
-  hasRole: (role) => false,
 };
 
 /**
@@ -150,14 +148,12 @@ const AuthContextProvider = (props: AuthContextProviderProps) => {
    * @param role to be checked
    * @returns whether or not if the user has the role
    */
-  const hasRole = (role: string) => {
-    return keycloak.hasRealmRole(role);
-  };
+ 
 
   // Setup the context provider
   return (
     <AuthContext.Provider
-      value={{ isAuthenticated, username, logout, hasRole }}
+      value={{ isAuthenticated, username, logout }}
     >
       {props.children}
     </AuthContext.Provider>

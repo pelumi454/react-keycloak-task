@@ -1,0 +1,77 @@
+.slider-section {
+  background: rgba(190, 17, 233, 0.24);
+  height: 97vh;
+  border-radius: 20px;
+}
+  .slider-text-wrap {
+    padding: 75px 35px 30px 79px;
+  }
+     @media screen and (max-width: 768px){
+        .slider-text-wrap {
+    padding:3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     }
+        }
+    
+  .show-now {
+    background: #ef5e0d;
+    border-radius: 30px;
+    padding: 12px 46px;
+    outline: none;
+    border: none;
+    color: #fff;
+    margin-top: 40px;
+    cursor: pointer;
+    margin-left: 1rem;
+  }
+  .username{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    color: #412c4e;
+  }
+  .slider-text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 80px;
+    color: #412c4e;
+     @media screen and (max-width: 500px){
+    margin-left: 0rem!important;
+    font-size: 20px;
+    line-height: 35px;
+    width: 100%;
+  }
+     @media screen and (min-width: 500px) and (max-width: 768px){
+    margin-left: 0rem!important;
+    font-size: 28px;
+    line-height: 35px;
+    width: 100%;
+  }
+  }
+  .slider-image {
+    padding: .7rem 2.3rem 1.5rem 0;
+    width: 447px;
+  }
+
+.slider-image-wrap{
+  margin-top: 2rem;
+}
+@media screen and (max-width: 800px){
+   .slider-image{
+display: none;
+   } 
+  }
+
+.slider-wrap{
+    display:flex;
+    padding-top: 7rem;
+}
+.logout-btn{
+    flex-direction: column;
+}
